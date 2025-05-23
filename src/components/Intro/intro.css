@@ -1,0 +1,118 @@
+#introContainer {
+    display: flex;
+    margin-top: -10rem;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+}
+
+.textContainer {
+    font-size: 48px;
+    padding-top: 5rem;
+    margin-right: 10rem;
+}
+
+.introName {
+    color: rgb(241, 64, 64);
+}
+
+.highlightSecondary {
+    color: rgb(200, 80, 80);
+   
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+.aboutText {
+    font-size: 20px;
+}
+
+.iconPanel {
+    display: flex;
+    margin-top: 0.4rem;
+    margin-left: -0.4rem;
+    width: 10%;
+}
+.typewriter {
+    animation: typing 2.5s steps(40, end) forwards;
+    color: rgb(200, 80, 80);
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(200, 80, 80); }
+  }
+  
+
+.iconPanel a {
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+.iconPanel a:hover {
+    transform: scale(1.2); 
+    color: rgb(241, 64, 64);
+}
+
+@media screen and (max-width: 768px) {
+    #introContainer {
+      flex-direction: column-reverse;
+      text-align: center;
+      height: 100vh;
+      padding-top: 4rem;
+    }
+  
+    .textContainer {
+      margin: 0;
+      padding-top: 2rem;
+      font-size: 32px;
+    }
+  
+    .aboutText {
+      font-size: 16px;
+      padding: 0 1rem;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+  
+    .typewriter {
+      font-size: 16px;
+      padding: 0 1rem;
+    }
+  
+    .iconPanel {
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .bg {
+        max-width: 160px; 
+        height: auto;
+        margin-top: 1rem;
+      }
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      
+  }
+  

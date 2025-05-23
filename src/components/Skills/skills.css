@@ -1,0 +1,105 @@
+#skillsContainer {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skillsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 2rem;
+  }
+  
+  .containerTitle {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .carouselCard {
+    border-radius: 16px;
+    padding: 30px;
+    margin: 3rem auto 0;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    background: linear-gradient(to bottom, #1c1c1c, #121212);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .skillTitle {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .skillStack {
+    font-weight: bold;
+    color: #eee;
+    margin-bottom: 10px;
+  }
+  
+  .skillDesc {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .carouselControls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .carouselBtn {
+    padding: 6px 14px;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgb(30, 30, 30);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .carouselBtn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .carouselCard.fade {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    .carouselCard {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carouselCard {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .carouselCard {
+      width: 90%;
+    }
+  }
+  

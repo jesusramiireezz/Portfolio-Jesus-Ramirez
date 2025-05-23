@@ -1,0 +1,141 @@
+#contactContainer {
+    background: rgb(30, 30, 30);
+    color: white;
+    padding: 60px 0;
+}
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.contactDesc {
+    font-size: 1rem;
+    color: #ccc;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    background: rgb(54, 54, 54);
+    font-size: 18px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgb(241, 64, 64);
+}
+
+.formBtn {
+    background-color: rgb(241, 64, 64);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.formBtn:hover {
+    background-color: rgb(200, 50, 50);
+    font-weight: bold;
+}
+
+.alert {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #3e8e41;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+    border: 1px solid #d32f2f;
+}
+
+/* Social icons (if needed) */
+.socialMedia {
+    margin-top: 1.5rem;
+}
+
+.fa-x-twitter {
+    color: #1DA1F2; 
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.fa-instagram {
+    color: #E4405F;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.iconStyle:hover {
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .contactTitle {
+        font-size: 1.8rem;
+    }
+
+    .contactDesc {
+        font-size: 0.95rem;
+    }
+
+    .formBtn {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactTitle {
+        font-size: 1.6rem;
+    }
+
+    .contactDesc {
+        font-size: 0.85rem;
+    }
+
+    .formBtn {
+        font-size: 0.85rem;
+    }
+}
