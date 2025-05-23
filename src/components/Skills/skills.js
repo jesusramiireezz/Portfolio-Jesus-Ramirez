@@ -65,7 +65,7 @@ const Skills = () => {
 
   return (
     <section id='skillsContainer'>
-      <h2 className='containerTitle'>&lt; My skills /&gt;</h2>
+      <h2 className='containerTitle'>&lt; Skills /&gt;</h2>
 
       <div className={`carouselCard ${fade ? 'fade' : ''}`}>
         <h3 className='skillTitle'>{current.title}</h3>

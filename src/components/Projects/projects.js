@@ -8,7 +8,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
     return (
         <section id='projects'>
-            <h2 className='projectsTitle'>&lt; My projects /&gt;</h2>
+            <h2 className='projectsTitle'>&lt; Projects /&gt;</h2>
             <div className='projectsContainer'>
                 <div className='projectCard'>
                     <a href="https://jolieslibelules.com" target="_blank" rel="noopener noreferrer">
